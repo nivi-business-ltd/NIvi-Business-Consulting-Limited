@@ -95,15 +95,6 @@ export default function Home() {
         <div className="spotlight absolute inset-0" />
 
         <motion.div style={{ opacity: fade }} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 w-full py-24">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="font-mono text-xs uppercase tracking-[0.3em] text-[#E2C08D]/80 mb-8"
-          >
-            Glasgow · United Kingdom — Serving SMEs Worldwide
-          </motion.p>
-
           <h1 data-testid="hero-title-masked" className="font-serif font-medium tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-7xl text-[#F9FAFB] max-w-5xl">
             <MaskedLine delay={0.35}>Empowering SMEs worldwide</MaskedLine>
             <MaskedLine delay={0.5}>with <em className="text-[#E2C08D]">sovereign</em> IT &</MaskedLine>
