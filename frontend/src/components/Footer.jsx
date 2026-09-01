@@ -11,7 +11,7 @@ export default function Footer() {
           </p>
           <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-sm">
             Architecting digital precision and growth for small and medium-sized
-            enterprises worldwide — from the heart of London.
+            enterprises worldwide — from the heart of Glasgow.
           </p>
         </div>
         <div className="md:col-span-3">
@@ -25,17 +25,17 @@ export default function Footer() {
           </div>
         </div>
         <div className="md:col-span-4">
-          <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#E2C08D]/80 mb-5">London HQ</p>
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#E2C08D]/80 mb-5">Glasgow HQ</p>
           <div className="flex flex-col gap-3 text-sm text-slate-400">
-            <span className="flex items-start gap-3"><MapPin className="w-4 h-4 mt-0.5 text-[#E2C08D]/70" /> One Canada Square, Canary Wharf,<br />London E14 5AB, United Kingdom</span>
+            <span className="flex items-start gap-3"><MapPin className="w-4 h-4 mt-0.5 text-[#E2C08D]/70" /> Glasgow, Scotland,<br />United Kingdom</span>
             <span className="flex items-center gap-3"><Mail className="w-4 h-4 text-[#E2C08D]/70" /> hello@nivifinserv.co.uk</span>
-            <span className="flex items-center gap-3"><Phone className="w-4 h-4 text-[#E2C08D]/70" /> +44 20 7946 0800</span>
+            <span className="flex items-center gap-3"><Phone className="w-4 h-4 text-[#E2C08D]/70" /> +44 7846745814</span>
           </div>
         </div>
       </div>
       <div className="border-t border-[#1F2D47]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-6 flex flex-col sm:flex-row justify-between gap-3">
-          <p className="font-mono text-xs text-slate-500">© 2026 Nivi Finserv Ltd. Registered in England & Wales.</p>
+          <p className="font-mono text-xs text-slate-500">© 2026 Nivi Finserv Ltd. Registered in Scotland, United Kingdom.</p>
           <p className="font-mono text-xs text-slate-500">IT Consultancy · Integration · Analytics · Optimization</p>
         </div>
       </div>

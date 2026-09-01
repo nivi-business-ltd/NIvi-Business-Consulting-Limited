@@ -5,7 +5,7 @@ import { ArrowUpRight, Network, Blocks, BarChart3, Workflow } from "lucide-react
 import Marquee from "@/components/Marquee";
 import { Reveal, MaskedLine } from "@/components/Reveal";
 
-const HERO_IMG = "https://images.unsplash.com/photo-1549483249-f0b359d1e289?crop=entropy&cs=srgb&fm=jpg&q=85&w=2000";
+const HERO_IMG = "https://images.unsplash.com/photo-1567961234169-21355ccf4cfa?crop=entropy&cs=srgb&fm=jpg&q=85&w=2000";
 const ANALYTICS_IMG = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200";
 
 const services = [
@@ -89,7 +89,7 @@ export default function Home() {
       {/* Kinetic Hero */}
       <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0">
-          <img src={HERO_IMG} alt="London financial district skyline at dusk" className="w-full h-full object-cover opacity-30" />
+          <img src={HERO_IMG} alt="Aerial view of Glasgow cityscape, Scotland" className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E17]/70 via-[#0A0E17]/80 to-[#0A0E17]" />
         </motion.div>
         <div className="spotlight absolute inset-0" />
@@ -101,7 +101,7 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="font-mono text-xs uppercase tracking-[0.3em] text-[#E2C08D]/80 mb-8"
           >
-            London · United Kingdom — Serving SMEs Worldwide
+            Glasgow · United Kingdom — Serving SMEs Worldwide
           </motion.p>
 
           <h1 data-testid="hero-title-masked" className="font-serif font-medium tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-7xl text-[#F9FAFB] max-w-5xl">

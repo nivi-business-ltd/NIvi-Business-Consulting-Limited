@@ -3,7 +3,7 @@ import { ArrowUpRight, Network, Blocks, BarChart3, Workflow, Check } from "lucid
 import { Reveal, MaskedLine } from "@/components/Reveal";
 
 const ANALYTICS_IMG = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200";
-const CITY_IMG = "https://images.unsplash.com/photo-1549483249-f0b359d1e289?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200";
+const CITY_IMG = "https://images.unsplash.com/photo-1783372634047-32c7858287b6?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200";
 
 const deepDives = [
   {
@@ -13,7 +13,7 @@ const deepDives = [
     lead: "Technology strategy that answers to the balance sheet.",
     points: ["IT estate & architecture audits", "Cloud migration & cost governance", "Vendor selection & contract negotiation", "Security posture & compliance roadmaps", "Fractional CTO / CIO advisory"],
     img: CITY_IMG,
-    alt: "London financial skyline representing IT strategy",
+    alt: "Glasgow architecture representing IT strategy",
   },
   {
     n: "02",

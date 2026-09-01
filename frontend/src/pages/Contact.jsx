@@ -72,8 +72,8 @@ export default function Contact() {
                 <div className="flex items-start gap-4">
                   <MapPin className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
-                    <p className="font-mono text-xs uppercase tracking-widest text-slate-500">London HQ</p>
-                    <p className="mt-1 text-sm text-slate-300">One Canada Square, Canary Wharf,<br />London E14 5AB, United Kingdom</p>
+                    <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Glasgow HQ</p>
+                    <p className="mt-1 text-sm text-slate-300">Glasgow, Scotland,<br />United Kingdom</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -87,7 +87,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Telephone</p>
-                    <p className="mt-1 text-sm text-slate-300">+44 20 7946 0800</p>
+                    <p className="mt-1 text-sm text-slate-300">+44 7846745814</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

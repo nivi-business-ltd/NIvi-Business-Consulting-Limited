@@ -3,7 +3,7 @@ import { ArrowUpRight, Compass, Handshake, ShieldCheck, Globe2 } from "lucide-re
 import { Reveal, MaskedLine } from "@/components/Reveal";
 
 const TEAM_IMG = "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400";
-const LONDON_IMG = "https://images.unsplash.com/photo-1514557718210-26e452f8fab0?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400";
+const GLASGOW_IMG = "https://images.unsplash.com/photo-1705354153594-5661fbed22a5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400";
 
 const principles = [
   { icon: Compass, title: "Evidence before opinion", desc: "Every recommendation traces back to a diagnostic finding, never to a trend or a vendor pitch." },
@@ -27,7 +27,7 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E2C08D]/80 mb-8">About the Firm</p>
           <h1 className="font-serif font-medium tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-6xl text-[#F9FAFB] max-w-4xl">
-            <MaskedLine delay={0.2}>A London consultancy for</MaskedLine>
+            <MaskedLine delay={0.2}>A Glasgow consultancy for</MaskedLine>
             <MaskedLine delay={0.35}>the <em className="text-[#E2C08D]">world's</em> ambitious SMEs.</MaskedLine>
           </h1>
           <Reveal delay={0.6}>
@@ -48,12 +48,12 @@ export default function About() {
             <Reveal>
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E2C08D]/80 mb-4">Our Story</p>
               <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl tracking-tight text-[#F9FAFB] leading-tight">
-                Rooted in the City of London.<br />
+                Rooted in Glasgow, Scotland.<br />
                 <em className="text-[#E2C08D]">Fluent</em> in forty time zones.
               </h2>
               <div className="gold-rule w-24 mt-8" />
               <p className="mt-6 text-sm sm:text-base text-slate-400 leading-relaxed">
-                From our headquarters in Canary Wharf, we advise manufacturers in the
+                From our home in Glasgow, we advise manufacturers in the
                 Midlands, retailers in Rotterdam, logistics firms in Lagos and
                 professional-services practices in Singapore. The common thread:
                 leadership teams who refuse to let fragmented systems cap their
@@ -123,12 +123,12 @@ export default function About() {
 
       {/* London banner */}
       <section className="relative h-80 sm:h-96 overflow-hidden border-y border-[#1F2D47]">
-        <img src={LONDON_IMG} alt="The Shard and London architecture" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+        <img src={GLASGOW_IMG} alt="Glasgow clock tower and city architecture" className="absolute inset-0 w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A0E17] via-[#0A0E17]/60 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 h-full flex items-center">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E2C08D]/80 mb-3">Headquarters</p>
-            <p className="font-serif text-2xl sm:text-4xl text-[#F9FAFB]">Canary Wharf, London <em className="text-[#E2C08D]">E14</em></p>
+            <p className="font-serif text-2xl sm:text-4xl text-[#F9FAFB]">Glasgow, <em className="text-[#E2C08D]">Scotland</em></p>
           </Reveal>
         </div>
       </section>
