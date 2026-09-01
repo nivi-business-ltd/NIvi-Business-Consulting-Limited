@@ -20,6 +20,10 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-01, update 5)
+- Enquiry email alerts ON: POST /api/enquiries now emails nivifinservit@gmail.com via Emergent managed email (Resend proxy), branded HTML template, guardrail gate, verified live (202 Accepted). Enquiry saves even if email fails (logged)
+- Backend env: EMERGENT_EMAIL_KEY, EMAIL_FROM_NAME=Nivi Finserv Ltd., EMAIL_REPLY_TO + OWNER_EMAIL = nivifinservit@gmail.com; httpx in requirements.txt
+
 ## Implemented (2026-09-01, update 4)
 - NF logo (user-provided) added to header and footer; transparent padding trimmed; served from /public/logo.png
 - Favicon set generated from NF monogram on obsidian tile: favicon.ico (16/32/48), icon-192.png, icon-512.png, apple-touch-icon.png; tab title + meta description updated
