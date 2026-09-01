@@ -73,7 +73,7 @@ export default function Services() {
         {deepDives.map((d, i) => (
           <div key={d.n} data-testid={`service-deep-dive-${i + 1}`} className={`py-20 sm:py-24 ${i % 2 === 1 ? "bg-[#080C13]" : ""} border-b border-[#1F2D47]`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
-              <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+              <div className={d.img ? `lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}` : "lg:col-span-12 max-w-3xl"}>
                 <Reveal>
                   <div className="flex items-center gap-4">
                     <span className="font-mono text-2xl text-[#E2C08D]/60">{d.n}</span>
@@ -99,21 +99,17 @@ export default function Services() {
                   </Link>
                 </Reveal>
               </div>
-              <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                <Reveal delay={0.15}>
-                  {d.img ? (
+              {d.img && (
+                <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <Reveal delay={0.15}>
                     <div className="relative">
                       <div className="absolute -inset-3 border border-[#E2C08D]/25 rounded-lg translate-x-4 translate-y-4" />
                       <img src={d.img} alt={d.alt} className="relative rounded-lg w-full aspect-[4/3] object-cover" />
                       <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-[#0A0E17]/60 to-transparent" />
                     </div>
-                  ) : (
-                    <div className="h-full min-h-[280px] rounded-lg border border-[#1F2D47] bg-[#161F33] flex items-center justify-center p-10">
-                      <span className="font-serif italic text-6xl sm:text-8xl text-outline-gold select-none">{d.n}</span>
-                    </div>
-                  )}
-                </Reveal>
-              </div>
+                  </Reveal>
+                </div>
+              )}
             </div>
           </div>
         ))}

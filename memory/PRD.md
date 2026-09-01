@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-01, update 3)
+- Removed outlined-number placeholder panels from Services page (sections 02 and 04 are now full-width text; only real photos remain)
+
 ## Implemented (2026-09-01, update 2)
 - Company details corrected per user: registered in Glasgow, Scotland, UK; contact number +44 7846745814
 - All London references replaced with Glasgow across Home hero, About story/banner, Contact channels, Footer ("Registered in Scotland, United Kingdom")
