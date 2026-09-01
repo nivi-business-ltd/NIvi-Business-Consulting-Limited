@@ -71,7 +71,7 @@ const Counter = ({ value, suffix }) => {
     return () => controls.stop();
   }, [inView, value]);
   return (
-    <span ref={ref} className="font-mono text-4xl sm:text-5xl font-semibold tracking-tight text-[#E2C08D]">
+    <span ref={ref} className="font-mono text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#E2C08D]">
       {n}{suffix}
     </span>
   );
@@ -82,19 +82,18 @@ export default function Home() {
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
   const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
-  const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
     <main>
       {/* Kinetic Hero */}
-      <section ref={heroRef} className="relative min-h-screen flex items-center overflow-hidden pt-20">
+      <section ref={heroRef} className="relative min-h-[100svh] flex items-center overflow-hidden pt-20">
         <motion.div style={{ y: bgY, scale: bgScale }} className="absolute inset-0">
           <img src={HERO_IMG} alt="Aerial view of Glasgow cityscape, Scotland" className="w-full h-full object-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E17]/70 via-[#0A0E17]/80 to-[#0A0E17]" />
         </motion.div>
         <div className="spotlight absolute inset-0" />
 
-        <motion.div style={{ opacity: fade }} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 w-full py-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 w-full py-24">
           <h1 data-testid="hero-title-masked" className="font-serif font-medium tracking-tight leading-[1.08] text-4xl sm:text-5xl lg:text-7xl text-[#F9FAFB] max-w-5xl">
             <MaskedLine delay={0.35}>Empowering SMEs worldwide</MaskedLine>
             <MaskedLine delay={0.5}>with <em className="text-[#E2C08D]">sovereign</em> IT &</MaskedLine>
@@ -139,16 +138,16 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
-            className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 border-t border-[#1F2D47] pt-10"
+            className="mt-12 sm:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 border-t border-[#1F2D47] pt-8 sm:pt-10"
           >
             {stats.map((s) => (
               <div key={s.label}>
                 <Counter value={s.value} suffix={s.suffix} />
-                <p className="mt-2 text-xs sm:text-sm text-slate-400 font-mono uppercase tracking-wider">{s.label}</p>
+                <p className="mt-2 text-[10px] sm:text-sm text-slate-400 font-mono uppercase tracking-wider leading-snug">{s.label}</p>
               </div>
             ))}
           </motion.div>
-        </motion.div>
+        </div>
       </section>
 
       <Marquee />
