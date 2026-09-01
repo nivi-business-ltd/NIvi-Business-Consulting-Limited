@@ -106,7 +106,7 @@ export default function Home() {
             transition={{ delay: 1, duration: 0.8 }}
             className="mt-8 max-w-xl text-base sm:text-lg text-slate-300 font-light leading-relaxed"
           >
-            Nivi Finserv is a digital solutions and business consultancy delivering
+            Nivi Business Consulting is a digital solutions and business consultancy delivering
             end-to-end IT consultancy, software integration, data analytics and
             process optimization for ambitious small and medium-sized enterprises.
           </motion.p>
@@ -249,7 +249,7 @@ export default function Home() {
             <Reveal delay={0.1}>
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#E2C08D]/80 mb-6">Client Voices</p>
               <blockquote className="font-serif text-2xl sm:text-3xl leading-snug text-[#F9FAFB]">
-                “Nivi Finserv rebuilt our data estate in twelve weeks. For the first
+                “Nivi Business Consulting rebuilt our data estate in twelve weeks. For the first
                 time, our board argues about <em className="text-[#E2C08D]">strategy</em> —
                 not about whose spreadsheet is right.”
               </blockquote>

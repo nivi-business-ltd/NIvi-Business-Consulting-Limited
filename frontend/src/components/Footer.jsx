@@ -6,7 +6,7 @@ export default function Footer() {
     <footer data-testid="footer-container" className="border-t border-[#1F2D47] bg-[#080C13]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
-          <img src="/logo.png" alt="Nivi Finserv Ltd. logo" className="h-20 w-auto object-contain" />
+          <img src="/logo.png" alt="Nivi Business Consulting Ltd logo" className="h-20 w-auto object-contain" />
           <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-sm">
             Architecting digital precision and growth for small and medium-sized
             enterprises worldwide — from the heart of Glasgow.
@@ -33,7 +33,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-[#1F2D47]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-6 flex flex-col sm:flex-row justify-between gap-3">
-          <p className="font-mono text-xs text-slate-500">© 2026 Nivi Finserv Ltd. Registered in Scotland, United Kingdom.</p>
+          <p className="font-mono text-xs text-slate-500">© 2026 Nivi Business Consulting Ltd Registered in Scotland, United Kingdom.</p>
           <p className="font-mono text-xs text-slate-500">IT Consultancy · Integration · Analytics · Optimization</p>
         </div>
       </div>

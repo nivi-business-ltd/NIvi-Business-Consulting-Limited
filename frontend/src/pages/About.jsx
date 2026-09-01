@@ -32,7 +32,7 @@ export default function About() {
           </h1>
           <Reveal delay={0.6}>
             <p className="mt-8 max-w-2xl text-base sm:text-lg text-slate-300 font-light leading-relaxed">
-              Nivi Finserv Ltd. was founded on a simple observation: the digital
+              Nivi Business Consulting Ltd. was founded on a simple observation: the digital
               discipline that powers global enterprises should not be reserved for
               them. We bring it — measured, pragmatic and accountable — to small and
               medium-sized businesses everywhere.
@@ -61,7 +61,7 @@ export default function About() {
               </p>
               <p className="mt-4 text-sm sm:text-base text-slate-400 leading-relaxed">
                 We are deliberately boutique — senior consultants only, small
-                caseloads, and a partner on every call. When you engage Nivi Finserv,
+                caseloads, and a partner on every call. When you engage Nivi Business Consulting,
                 you engage the people whose names are on the door.
               </p>
             </Reveal>
@@ -69,7 +69,7 @@ export default function About() {
           <Reveal delay={0.15} className="lg:col-span-7">
             <div className="relative">
               <div className="absolute -inset-3 border border-[#E2C08D]/25 rounded-lg -translate-x-4 translate-y-4" />
-              <img src={TEAM_IMG} alt="Nivi Finserv advisory team in the boardroom" className="relative rounded-lg w-full aspect-[16/10] object-cover" />
+              <img src={TEAM_IMG} alt="Nivi Business Consulting advisory team in the boardroom" className="relative rounded-lg w-full aspect-[16/10] object-cover" />
               <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-[#0A0E17]/50 to-transparent" />
             </div>
           </Reveal>

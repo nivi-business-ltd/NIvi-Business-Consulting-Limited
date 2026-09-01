@@ -20,7 +20,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0A0E17]/85 border-b border-[#1F2D47]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 h-20 flex items-center justify-between">
         <Link to="/" data-testid="nav-brand-logo" className="flex items-center gap-3 group">
-          <img src="/logo.png" alt="Nivi Finserv Ltd. logo" className="h-11 w-auto object-contain" />
+          <img src="/logo.png" alt="Nivi Business Consulting Ltd logo" className="h-11 w-auto object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

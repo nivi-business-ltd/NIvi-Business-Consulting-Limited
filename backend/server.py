@@ -140,7 +140,7 @@ class Enquiry(EnquiryCreate):
 
 @api_router.get("/")
 async def root():
-    return {"message": "Nivi Finserv Ltd. API"}
+    return {"message": "Nivi Business Consulting Ltd API"}
 
 
 @api_router.post("/enquiries", response_model=Enquiry)
@@ -158,7 +158,7 @@ async def create_enquiry(input: EnquiryCreate):
         '<table role="presentation" width="100%" style="background:#f6f4ef;padding:24px 0"><tr><td>'
         '<table role="presentation" width="560" align="center" style="background:#ffffff;border:1px solid #e5e0d5;'
         'border-top:4px solid #C79D58;padding:28px;margin:0 auto"><tr><td>'
-        '<p style="font-family:Georgia,serif;font-size:22px;margin:0 0 4px">Nivi Finserv Ltd.</p>'
+        '<p style="font-family:Georgia,serif;font-size:22px;margin:0 0 4px">Nivi Business Consulting Ltd</p>'
         '<p style="font-family:Arial,sans-serif;font-size:12px;color:#888;margin:0 0 20px">New enquiry from the website contact form</p>'
         '<table role="presentation" width="100%">'
         + row("Name", escape(input.name))
@@ -171,8 +171,8 @@ async def create_enquiry(input: EnquiryCreate):
         '<p style="font-family:Arial,sans-serif;font-size:13px;color:#888;margin:20px 0 6px">Message</p>'
         f'<p style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.6;background:#faf8f3;'
         f'padding:14px;border-left:3px solid #C79D58;margin:0">{escape(input.message)}</p>'
-        '<p style="font-family:Arial,sans-serif;font-size:11px;color:#aaa;margin:24px 0 0">Sent by the Nivi Finserv '
-        'Ltd. website. Reply directly to the sender using the email address listed above.</p>'
+        '<p style="font-family:Arial,sans-serif;font-size:11px;color:#aaa;margin:24px 0 0">Sent by the Nivi Business '
+        'Consulting Ltd website. Reply directly to the sender using the email address listed above.</p>'
         '</td></tr></table></td></tr></table>'
     )
     email_id = await send_email(to=OWNER_EMAIL, subject=subject, html=html)
