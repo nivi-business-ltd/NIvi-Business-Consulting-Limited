@@ -20,6 +20,12 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-01, update 4)
+- NF logo (user-provided) added to header and footer; transparent padding trimmed; served from /public/logo.png
+- Favicon set generated from NF monogram on obsidian tile: favicon.ico (16/32/48), icon-192.png, icon-512.png, apple-touch-icon.png; tab title + meta description updated
+- Contact email updated to nivifinservit@gmail.com (Contact page + Footer)
+- Removed hero overline, removed Services placeholder number panels, removed header "Ltd · UK" text per user requests
+
 ## Implemented (2026-09-01, update 3)
 - Removed outlined-number placeholder panels from Services page (sections 02 and 04 are now full-width text; only real photos remain)
 
