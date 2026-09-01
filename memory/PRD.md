@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-01, update 8)
+- New NB logo (user-provided, "Innovate. Optimize. Grow.") replaced across header + footer (/public/logo.png, trimmed); favicon set regenerated from NB monogram (favicon.ico, icon-192/512, apple-touch-icon)
+
 ## Implemented (2026-09-01, update 7)
 - Company renamed throughout: "Nivi Finserv Ltd." → "Nivi Business Consulting Ltd" (all pages, footer legal line, tab title, meta description, backend API message, enquiry email template + EMAIL_FROM_NAME). Verified live; enquiry email still delivers. NOTE: NF logo monogram retained — initials no longer match (NBC); user may want a new logo
 - User plans domain: niviconsultancy.com (free via IONOS through company formation agent, first year)
