@@ -6,9 +6,7 @@ export default function Footer() {
     <footer data-testid="footer-container" className="border-t border-[#1F2D47] bg-[#080C13]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 py-16 grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
-          <p className="font-serif text-3xl text-[#F9FAFB]">
-            Nivi <span className="italic text-[#E2C08D]">Finserv</span> <span className="text-lg text-slate-500">Ltd.</span>
-          </p>
+          <img src="/logo.png" alt="Nivi Finserv Ltd. logo" className="h-20 w-auto object-contain" />
           <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-sm">
             Architecting digital precision and growth for small and medium-sized
             enterprises worldwide — from the heart of Glasgow.
