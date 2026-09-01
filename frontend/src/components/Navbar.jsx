@@ -21,9 +21,6 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16 h-20 flex items-center justify-between">
         <Link to="/" data-testid="nav-brand-logo" className="flex items-center gap-3 group">
           <img src="/logo.png" alt="Nivi Finserv Ltd. logo" className="h-11 w-auto object-contain" />
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-slate-500 group-hover:text-[#E2C08D] transition-colors duration-300">
-            Ltd · UK
-          </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
