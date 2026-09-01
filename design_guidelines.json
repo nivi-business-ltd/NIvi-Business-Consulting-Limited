@@ -1,0 +1,228 @@
+{
+  "brand_identity": {
+    "company_name": "Nivi Finserv Ltd.",
+    "tagline": "Architecting Digital Precision & Growth for Global Enterprise SMEs",
+    "location": "London, United Kingdom",
+    "market_focus": "SMEs worldwide (UK, EU, Americas, Asia-Pacific)",
+    "core_offerings": [
+      "End-to-End IT Consultancy",
+      "Enterprise Software Integration Support",
+      "Advanced Data Analytics & Business Intelligence",
+      "Digital Business Process Optimization"
+    ],
+    "art_direction": "Awwwards-grade Modern Dark Premium with Editorial Serif Elegance. Merges high-net-worth boutique financial consulting aesthetic with deep technical mastery. Obsidian charcoal canvas, warm champagne/gold metallic accents, crisp grid lines, and kinetic editorial motion."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "'Playfair Display', 'Cormorant Garamond', Georgia, serif",
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-serif font-medium tracking-tight leading-[1.1]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif font-normal tracking-tight leading-snug",
+      "h3": "text-xl sm:text-2xl font-serif font-medium tracking-tight leading-snug",
+      "h4": "text-lg sm:text-xl font-sans font-semibold tracking-wide"
+    },
+    "body": {
+      "font_family": "'Plus Jakarta Sans', 'Satoshi', system-ui, sans-serif",
+      "large": "text-lg sm:text-xl font-sans text-slate-300 font-light leading-relaxed",
+      "default": "text-base font-sans text-slate-300/90 font-normal leading-relaxed",
+      "small": "text-sm font-sans text-slate-400 font-normal leading-normal"
+    },
+    "labels_and_mono": {
+      "font_family": "'JetBrains Mono', 'Fira Code', monospace",
+      "overline": "text-xs uppercase tracking-[0.25em] font-mono text-amber-300/80 font-medium",
+      "stat_number": "text-4xl sm:text-5xl font-mono font-semibold tracking-tight text-amber-200"
+    }
+  },
+  "colors": {
+    "theme_mode": "Dark Premium Base with Editorial Warm Accents",
+    "palette": {
+      "background_primary": "#0A0E17",
+      "background_secondary": "#111827",
+      "surface_card": "#161F33",
+      "surface_card_hover": "#1E293B",
+      "surface_elevated": "rgba(22, 31, 51, 0.85)",
+      "border_subtle": "#1F2D47",
+      "border_accent": "#334155",
+      "border_gold": "rgba(226, 192, 141, 0.3)",
+      "text_primary": "#F9FAFB",
+      "text_secondary": "#CBD5E1",
+      "text_muted": "#94A3B8",
+      "accent_gold": "#E2C08D",
+      "accent_gold_hover": "#F0D5AA",
+      "accent_emerald": "#2DD4BF",
+      "accent_emerald_glow": "rgba(45, 212, 191, 0.15)",
+      "cta_gradient_from": "#E2C08D",
+      "cta_gradient_to": "#C79D58"
+    },
+    "contrast_rules": "All text must achieve >= 4.5:1 APCA/WCAG contrast against background. Never place plain text over raw image without gradient/backdrop scrim. Never use completely transparent backgrounds for dropdowns or floating headers."
+  },
+  "spacing_and_layout": {
+    "grid_system": "Swiss Editorial Bento Grid with asymmetrical tension (12 columns on desktop: col-span-12, md:col-span-8, lg:col-span-4)",
+    "padding_scale": {
+      "section_y": "py-20 sm:py-28 lg:py-36",
+      "container_x": "px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto",
+      "card_internal": "p-6 sm:p-8 lg:p-10"
+    },
+    "header_rules": "Header fixed z-50 with backdrop-blur-xl bg-[#0A0E17]/85 border-b border-[#1F2D47]. Body padding top pt-24."
+  },
+  "key_components": {
+    "kinetic_hero": {
+      "type": "HeroSection.js",
+      "description": "Large kinetic hero featuring line-by-line masked headline reveal (using Framer Motion initial y:100% overflow-hidden span), live metric tickers, interactive subtle particle background, and dual CTA.",
+      "headline": "Empowering SMEs Worldwide with Sovereign IT & Digital Strategy."
+    },
+    "services_showcase": {
+      "type": "ServicesGrid.js",
+      "description": "Bento-style 4-card detailed grid with interactive tab expansion, deep feature lists, technology stack chips, and downloadable/requestable capability brief modal."
+    },
+    "manifesto_chapters": {
+      "type": "ManifestoChapters.js",
+      "description": "Numbered editorial approach chapters (01. Precision Diagnostics, 02. Frictionless Integration, 03. Data-Driven Sovereignty, 04. Scalable Global Impact) with accordion & sticky side preview."
+    },
+    "editorial_marquee": {
+      "type": "EditorialMarquee.js",
+      "description": "Slow, elegant kinetic ribbon running continuous key brand values (IT CONSULTANCY • SOFTWARE INTEGRATION • DATA ANALYTICS • PROCESS OPTIMIZATION) in giant outlined serif typography."
+    },
+    "about_firm_story": {
+      "type": "AboutSection.js",
+      "description": "Editorial firm biography highlighting London headquarters, international SME reach, advisory board, and key trust metrics."
+    },
+    "contact_enquiry_form": {
+      "type": "ContactForm.js",
+      "description": "Interactive multi-step consultancy enquiry form (saves enquiries to backend database with email confirmation simulation, budget select, service checkboxes, validation, and toast notification)."
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_cityscape",
+        "url": "https://images.unsplash.com/photo-1549483249-f0b359d1e289?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "London Financial District Skyline at Dusk",
+        "usage": "Hero background / About page UK base spotlight"
+      },
+      {
+        "category": "executive_team",
+        "url": "https://images.unsplash.com/photo-1622675363311-3e1904dc1885?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Nivi Finserv Advisory Team in Boardroom",
+        "usage": "About page story / Consultancy methodology section"
+      },
+      {
+        "category": "data_analytics",
+        "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Advanced Business Intelligence Dashboard Analytics",
+        "usage": "Data Analytics service card / Case study showcase"
+      },
+      {
+        "category": "modern_office",
+        "url": "https://images.unsplash.com/photo-1514557718210-26e452f8fab0?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "The Shard and London Architecture",
+        "usage": "Contact page location background & footer banner"
+      }
+    ]
+  },
+  "motion_and_interactions": {
+    "libraries": ["framer-motion", "lenis", "lucide-react", "sonner"],
+    "specifications": {
+      "lenis": "Smooth momentum scroll initialized on root window",
+      "scroll_reveal": "framer-motion viewport={{ once: true, margin: '-100px' }} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}",
+      "hover_effects": "Cards lift -translate-y-2 with shadow-2xl transition-all duration-300 border-[#E2C08D]/40"
+    }
+  },
+  "pages_blueprint": [
+    {
+      "route": "/",
+      "title": "Home | Nivi Finserv Ltd.",
+      "sections": [
+        "Navigation Header",
+        "Kinetic Masked Hero",
+        "Editorial Value Marquee",
+        "Key Services Bento Showcase",
+        "Numbered Manifesto Chapters",
+        "Global Impact & UK Legacy Metrics",
+        "Interactive Strategy Calculator / Service Matcher",
+        "Client Case Studies & Testimonials",
+        "Primary CTA Banner",
+        "Footer"
+      ]
+    },
+    {
+      "route": "/about",
+      "title": "About Us | Nivi Finserv Ltd.",
+      "sections": [
+        "Navigation Header",
+        "About Hero Banner with London Office Focus",
+        "Our Story & UK Base Philosophy",
+        "Global SME Impact Map",
+        "Leadership & Senior Advisory Team",
+        "Core Operating Principles",
+        "Footer"
+      ]
+    },
+    {
+      "route": "/services",
+      "title": "Services | Nivi Finserv Ltd.",
+      "sections": [
+        "Navigation Header",
+        "Services Hero & Scope",
+        "Deep-Dive: IT Consultancy",
+        "Deep-Dive: Software Integration Support",
+        "Deep-Dive: Data Analytics & BI",
+        "Deep-Dive: Process Optimization",
+        "Engagement Models & Audit Process",
+        "Service Consultation Request Form Modal",
+        "Footer"
+      ]
+    },
+    {
+      "route": "/contact",
+      "title": "Contact Us | Nivi Finserv Ltd.",
+      "sections": [
+        "Navigation Header",
+        "Contact Hero with Direct Channels",
+        "Multi-Step Consultation Enquiry Form",
+        "London Office Location & Regional Desks",
+        "FAQ Accordion",
+        "Footer"
+      ]
+    }
+  ],
+  "testing_and_accessibility": {
+    "data_testid_convention": "kebab-case, role-focused",
+    "required_test_ids": [
+      "nav-brand-logo",
+      "nav-link-home",
+      "nav-link-about",
+      "nav-link-services",
+      "nav-link-contact",
+      "nav-cta-contact-button",
+      "hero-title-masked",
+      "hero-cta-explore-services",
+      "hero-cta-book-consultation",
+      "services-grid-container",
+      "service-card-it-consultancy",
+      "service-card-software-integration",
+      "service-card-data-analytics",
+      "service-card-process-optimization",
+      "manifesto-chapter-1",
+      "manifesto-chapter-2",
+      "manifesto-chapter-3",
+      "manifesto-chapter-4",
+      "about-story-section",
+      "contact-form-name-input",
+      "contact-form-email-input",
+      "contact-form-company-input",
+      "contact-form-service-select",
+      "contact-form-message-input",
+      "contact-form-submit-button",
+      "contact-form-success-toast",
+      "footer-container"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a complete multi-page React application (.js / .jsx files) using React Router.",
+    "Ensure Lenis smooth scrolling is enabled globally across all route changes.",
+    "Implement top navigation bar with clear active page state, gold accent underline, and instant navigation without full page reload.",
+    "Implement backend FastAPI contact enquiry endpoint in backend/server.py if required, or mock robust client-side storage with toast notification.",
+    "Ensure all interactive buttons, forms, links, and cards contain `data-testid` attributes as specified in required_test_ids.",
+    "Follow strictly the dark premium + editorial serif color scheme (#0A0E17 obsidian background, #E2C08D champagne gold accents, Playfair Display headers)."
+  ]
+}
