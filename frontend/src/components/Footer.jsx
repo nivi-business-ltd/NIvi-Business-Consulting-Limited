@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -11,6 +11,19 @@ export default function Footer() {
             Architecting digital precision and growth for small and medium-sized
             enterprises worldwide — from the heart of Glasgow.
           </p>
+          <div className="mt-6 flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/nivi_consulting/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="footer-instagram-link"
+              aria-label="Nivi Business Consulting on Instagram"
+              className="w-10 h-10 rounded-full border border-[#1F2D47] flex items-center justify-center text-slate-400 hover:text-[#E2C08D] hover:border-[#E2C08D]/50 transition-colors duration-300"
+            >
+              <Instagram className="w-4 h-4" strokeWidth={1.5} />
+            </a>
+            <span className="font-mono text-xs text-slate-500">@nivi_consulting</span>
+          </div>
         </div>
         <div className="md:col-span-3">
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#E2C08D]/80 mb-5">Navigate</p>

@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 10)
+- Instagram linked (https://www.instagram.com/nivi_consulting/): footer social icon button + @nivi_consulting, and Contact page "Direct channels" block; both open in new tab
+
 ## Implemented (2026-09-02, update 9)
 - Fixed services bento misalignment: removed conflicting duplicate col-span classes on service cards (desktop grid now 7/5 + 5/7 asymmetric rows as designed); tightened icon-to-title spacing on small screens. Verified at 1440px, 900px, 390px viewports
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { MapPin, Mail, Phone, Clock, ChevronDown, CheckCircle2 } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, ChevronDown, CheckCircle2, Instagram } from "lucide-react";
 import { Reveal, MaskedLine } from "@/components/Reveal";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
@@ -95,6 +95,21 @@ export default function Contact() {
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Hours</p>
                     <p className="mt-1 text-sm text-slate-300">Monday – Friday, 08:30 – 18:30 GMT<br />Regional desks: EU · Americas · APAC</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Instagram className="w-5 h-5 text-[#E2C08D] mt-0.5" />
+                  <div>
+                    <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Instagram</p>
+                    <a
+                      href="https://www.instagram.com/nivi_consulting/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="contact-instagram-link"
+                      className="mt-1 block text-sm text-slate-300 hover:text-[#E2C08D] transition-colors duration-300"
+                    >
+                      @nivi_consulting
+                    </a>
                   </div>
                 </div>
               </div>
