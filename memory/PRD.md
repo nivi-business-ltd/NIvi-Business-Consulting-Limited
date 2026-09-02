@@ -20,6 +20,10 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 12)
+- Registered address added: Office 540G, 3 Fitzroy Place, Area 1/1, Sauchiehall Street, Glasgow City Centre, Glasgow, UK — shown in Contact Direct channels + footer
+- Footer socials restyled: "Our Socials" label with icon-only buttons (Instagram + X, handles removed)
+
 ## Implemented (2026-09-02, update 11)
 - X profile linked (https://x.com/Nivi_IT): custom XIcon component, footer social buttons (Instagram + X with handles), Contact "Direct channels" X (Twitter) entry; both open in new tab
 
