@@ -52,7 +52,7 @@ export default function Footer() {
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#E2C08D]/80 mb-5">Glasgow HQ</p>
           <div className="flex flex-col gap-3 text-sm text-slate-400">
             <span className="flex items-start gap-3"><MapPin className="w-4 h-4 mt-0.5 text-[#E2C08D]/70" /> Office 540G, 3 Fitzroy Place,<br />Area 1/1, Sauchiehall Street,<br />Glasgow City Centre, Glasgow, UK</span>
-            <span className="flex items-center gap-3"><Mail className="w-4 h-4 text-[#E2C08D]/70" /> nivifinservit@gmail.com</span>
+            <span className="flex items-center gap-3"><Mail className="w-4 h-4 text-[#E2C08D]/70" /> nivibusinessconsultant@gmail.com</span>
             <span className="flex items-center gap-3"><Phone className="w-4 h-4 text-[#E2C08D]/70" /> +44 7846745814</span>
           </div>
         </div>

@@ -81,7 +81,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Email</p>
-                    <p className="mt-1 text-sm text-slate-300">nivifinservit@gmail.com</p>
+                    <p className="mt-1 text-sm text-slate-300">nivibusinessconsultant@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 13)
+- Contact email switched to nivibusinessconsultant@gmail.com everywhere: Contact page, footer, enquiry alert destination (OWNER_EMAIL) + EMAIL_REPLY_TO. Verified alert delivery to new address; old nivifinservit@gmail.com fully removed
+
 ## Implemented (2026-09-02, update 12)
 - Registered address added: Office 540G, 3 Fitzroy Place, Area 1/1, Sauchiehall Street, Glasgow City Centre, Glasgow, UK — shown in Contact Direct channels + footer
 - Footer socials restyled: "Our Socials" label with icon-only buttons (Instagram + X, handles removed)
