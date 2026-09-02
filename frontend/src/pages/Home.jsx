@@ -164,7 +164,7 @@ export default function Home() {
 
           <div data-testid="services-grid-container" className="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-5">
             {services.map((s, i) => (
-              <Reveal key={s.id} delay={i * 0.08} className={`${s.span} lg:col-span-6`}>
+              <Reveal key={s.id} delay={i * 0.08} className={s.span}>
                 <Link
                   to="/services"
                   data-testid={s.id}
@@ -174,7 +174,7 @@ export default function Home() {
                     <s.icon className="w-8 h-8 text-[#E2C08D]" strokeWidth={1.5} />
                     <ArrowUpRight className="w-5 h-5 text-slate-500 group-hover:text-[#E2C08D] transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
-                  <h3 className="mt-8 font-serif text-xl sm:text-2xl text-[#F9FAFB]">{s.title}</h3>
+                  <h3 className="mt-6 font-serif text-xl sm:text-2xl text-[#F9FAFB]">{s.title}</h3>
                   <p className="mt-3 text-sm text-slate-400 leading-relaxed">{s.desc}</p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     {s.tags.map((t) => (
