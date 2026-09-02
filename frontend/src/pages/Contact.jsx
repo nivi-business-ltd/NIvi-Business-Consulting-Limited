@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
 import { MapPin, Mail, Phone, Clock, ChevronDown, CheckCircle2, Instagram } from "lucide-react";
+import { XIcon } from "@/components/XIcon";
 import { Reveal, MaskedLine } from "@/components/Reveal";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
@@ -109,6 +110,21 @@ export default function Contact() {
                       className="mt-1 block text-sm text-slate-300 hover:text-[#E2C08D] transition-colors duration-300"
                     >
                       @nivi_consulting
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="w-5 h-5 text-[#E2C08D] mt-0.5 flex items-center justify-center"><XIcon className="w-4 h-4" /></span>
+                  <div>
+                    <p className="font-mono text-xs uppercase tracking-widest text-slate-500">X (Twitter)</p>
+                    <a
+                      href="https://x.com/Nivi_IT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="contact-x-link"
+                      className="mt-1 block text-sm text-slate-300 hover:text-[#E2C08D] transition-colors duration-300"
+                    >
+                      @Nivi_IT
                     </a>
                   </div>
                 </div>

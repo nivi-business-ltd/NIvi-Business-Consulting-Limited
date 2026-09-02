@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Mail, Phone, Instagram } from "lucide-react";
+import { XIcon } from "@/components/XIcon";
 
 export default function Footer() {
   return (
@@ -22,7 +23,17 @@ export default function Footer() {
             >
               <Instagram className="w-4 h-4" strokeWidth={1.5} />
             </a>
-            <span className="font-mono text-xs text-slate-500">@nivi_consulting</span>
+            <a
+              href="https://x.com/Nivi_IT"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="footer-x-link"
+              aria-label="Nivi Business Consulting on X"
+              className="w-10 h-10 rounded-full border border-[#1F2D47] flex items-center justify-center text-slate-400 hover:text-[#E2C08D] hover:border-[#E2C08D]/50 transition-colors duration-300"
+            >
+              <XIcon className="w-3.5 h-3.5" />
+            </a>
+            <span className="font-mono text-xs text-slate-500">@nivi_consulting · @Nivi_IT</span>
           </div>
         </div>
         <div className="md:col-span-3">

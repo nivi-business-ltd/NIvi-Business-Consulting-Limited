@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 11)
+- X profile linked (https://x.com/Nivi_IT): custom XIcon component, footer social buttons (Instagram + X with handles), Contact "Direct channels" X (Twitter) entry; both open in new tab
+
 ## Implemented (2026-09-02, update 10)
 - Instagram linked (https://www.instagram.com/nivi_consulting/): footer social icon button + @nivi_consulting, and Contact page "Direct channels" block; both open in new tab
 
