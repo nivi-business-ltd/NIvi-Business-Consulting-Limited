@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 14)
+- Glasgow address is now a tappable Google Maps link (footer + Contact page, opens in new tab with hover-gold state)
+
 ## Implemented (2026-09-02, update 13)
 - Contact email switched to nivibusinessconsultant@gmail.com everywhere: Contact page, footer, enquiry alert destination (OWNER_EMAIL) + EMAIL_REPLY_TO. Verified alert delivery to new address; old nivifinservit@gmail.com fully removed
 

@@ -74,7 +74,15 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Glasgow HQ</p>
-                    <p className="mt-1 text-sm text-slate-300">Office 540G, 3 Fitzroy Place,<br />Area 1/1, Sauchiehall Street,<br />Glasgow City Centre, Glasgow, UK</p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Office%20540G%2C%203%20Fitzroy%20Place%2C%20Area%201%2F1%2C%20Sauchiehall%20Street%2C%20Glasgow%20City%20Centre%2C%20Glasgow%2C%20UK"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid="contact-map-link"
+                      className="mt-1 block text-sm text-slate-300 hover:text-[#E2C08D] transition-colors duration-300"
+                    >
+                      Office 540G, 3 Fitzroy Place,<br />Area 1/1, Sauchiehall Street,<br />Glasgow City Centre, Glasgow, UK
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
