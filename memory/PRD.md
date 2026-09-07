@@ -21,7 +21,7 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
 ## Implemented (2026-09-02, update 16)
-- About leadership: founder card now "Sudhendra Soni — Founder & Director" (SS monogram). NOTE: E. Ashworth and M. Okafor cards remain fictional placeholders — awaiting real names or removal
+- About leadership: "Sudhendra Soni — Founder & Director" (SS), "Sarika Chaturvedi — Head of Data & Analytics" (SC). NOTE: M. Okafor (Integration Practice) remains a fictional placeholder — awaiting real name or removal
 
 ## Implemented (2026-09-02, update 15)
 - Footer contact block fix: Mail icon was squeezed invisible by long email (flex shrink) — icons now shrink-0, email wraps safely; all three lines aligned. Verified desktop + mobile

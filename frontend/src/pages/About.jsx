@@ -14,7 +14,7 @@ const principles = [
 
 const leaders = [
   { initials: "SS", name: "Sudhendra Soni", role: "Founder & Director", note: "Twenty years across enterprise architecture and SME transformation in the UK and EU." },
-  { initials: "EA", name: "E. Ashworth", role: "Head of Data & Analytics", note: "Former BI lead for FTSE-listed retail; specialist in decision-grade data estates." },
+  { initials: "SC", name: "Sarika Chaturvedi", role: "Head of Data & Analytics", note: "Former BI lead for FTSE-listed retail; specialist in decision-grade data estates." },
   { initials: "MO", name: "M. Okafor", role: "Director, Integration Practice", note: "Has connected more than 250 ERP, CRM and legacy systems across 14 countries." },
 ];
 
