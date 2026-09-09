@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 17)
+- Phone number changed to +44 7378977371 (Contact page + footer)
+
 ## Implemented (2026-09-02, update 16)
 - About leadership: "Sudhendra Soni — Founder & Director" (SS), "James Webber — Head of Data & Analytics" (JW). NOTE: M. Okafor (Integration Practice) remains a fictional placeholder — awaiting real name or removal
 

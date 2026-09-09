@@ -96,7 +96,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Telephone</p>
-                    <p className="mt-1 text-sm text-slate-300">+44 7846745814</p>
+                    <p className="mt-1 text-sm text-slate-300">+44 7378977371</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
