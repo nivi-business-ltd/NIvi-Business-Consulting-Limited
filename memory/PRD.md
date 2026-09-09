@@ -20,6 +20,10 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-09, update 21)
+- Static/GitHub Pages mirror support: REACT_APP_STATIC_MODE build flag switches contact form to Web3Forms (key via REACT_APP_WEB3FORMS_KEY) and router to HashRouter; package.json homepage "." for subpath hosting; PostHog analytics now only initialises on Emergent hosts; /.github/workflows/deploy.yml builds frontend (yarn + craco, Node 20, CI=false) and deploys to GitHub Pages. Static build verified locally (build succeeds, mirror renders, form present). REQUIRES: repo secret WEB3FORMS_KEY (user gets free key at web3forms.com) + Pages source = GitHub Actions
+- Static mirror differences: no enquiry database, no auto-reply email, URLs use /#/ (hash routing)
+
 ## Implemented (2026-09-09, update 20)
 - Hero stat counters fix: replaced scroll-into-view trigger (unreliable on phones, stats stuck at 0) with load-timed count-up tied to hero entrance. Verified all four values (120+, 14, 98%, 40%) at 390px viewport
 

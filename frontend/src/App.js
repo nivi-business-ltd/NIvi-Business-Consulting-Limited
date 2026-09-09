@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import Lenis from "lenis";
 import { Toaster } from "sonner";
 import Navbar from "@/components/Navbar";
@@ -9,6 +9,8 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
+
+const Router = process.env.REACT_APP_STATIC_MODE === "true" ? HashRouter : BrowserRouter;
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -44,7 +46,7 @@ function LenisProvider() {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <LenisProvider />
         <ScrollToTop />
         <div className="grain-overlay" />
@@ -57,7 +59,7 @@ function App() {
         </Routes>
         <Footer />
         <Toaster theme="dark" position="bottom-right" />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }

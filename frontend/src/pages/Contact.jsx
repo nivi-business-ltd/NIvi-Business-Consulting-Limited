@@ -6,6 +6,7 @@ import { XIcon } from "@/components/XIcon";
 import { Reveal, MaskedLine } from "@/components/Reveal";
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const STATIC_MODE = process.env.REACT_APP_STATIC_MODE === "true";
 
 const serviceOptions = [
   "IT Consultancy",
@@ -39,7 +40,27 @@ export default function Contact() {
     e.preventDefault();
     setSending(true);
     try {
-      await axios.post(`${API}/enquiries`, form);
+      if (STATIC_MODE) {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            access_key: process.env.REACT_APP_WEB3FORMS_KEY,
+            subject: `New website enquiry: ${form.service} — ${form.name}`,
+            from_name: "Nivi Business Consulting Website",
+            name: form.name,
+            email: form.email,
+            company: form.company || "—",
+            service: form.service,
+            budget: form.budget || "—",
+            message: form.message,
+          }),
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error("web3forms rejected");
+      } else {
+        await axios.post(`${API}/enquiries`, form);
+      }
       setSent(true);
       toast.success("Enquiry received — a senior consultant will reply within one business day.");
     } catch (err) {
@@ -147,9 +168,9 @@ export default function Contact() {
                   <CheckCircle2 className="w-12 h-12 text-[#E2C08D] mx-auto" />
                   <h3 className="mt-6 font-serif text-2xl text-[#F9FAFB]">Thank you, {form.name.split(" ")[0]}.</h3>
                   <p className="mt-3 text-sm text-slate-400 max-w-sm mx-auto leading-relaxed">
-                    Your enquiry has been received and a confirmation email is on
-                    its way to <span className="text-[#E2C08D]">{form.email}</span>.
-                    A senior consultant will be in touch within one business day.
+                    {STATIC_MODE
+                      ? "Your enquiry has been sent. A senior consultant will be in touch within one business day."
+                      : <>Your enquiry has been received and a confirmation email is on its way to <span className="text-[#E2C08D]">{form.email}</span>. A senior consultant will be in touch within one business day.</>}
                   </p>
                 </div>
               ) : (
