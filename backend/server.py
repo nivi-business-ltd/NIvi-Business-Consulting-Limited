@@ -180,6 +180,35 @@ async def create_enquiry(input: EnquiryCreate):
         logger.info(f"Enquiry notification emailed: {email_id}")
     else:
         logger.error("Enquiry saved but notification email failed")
+
+    first_name = escape(input.name.split()[0])
+    reply_subject = "We have received your enquiry — Nivi Business Consulting Ltd"
+    reply_html = (
+        '<table role="presentation" width="100%" style="background:#f6f4ef;padding:24px 0"><tr><td>'
+        '<table role="presentation" width="560" align="center" style="background:#ffffff;border:1px solid #e5e0d5;'
+        'border-top:4px solid #C79D58;padding:32px;margin:0 auto"><tr><td>'
+        '<p style="font-family:Georgia,serif;font-size:22px;margin:0 0 4px">Nivi Business Consulting Ltd</p>'
+        '<p style="font-family:Arial,sans-serif;font-size:12px;color:#888;margin:0 0 24px">Innovate. Optimize. Grow.</p>'
+        f'<p style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.7;margin:0 0 14px">Dear {first_name},</p>'
+        '<p style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.7;margin:0 0 14px">'
+        f'Thank you for getting in touch. We have received your enquiry regarding '
+        f'<strong>{escape(input.service)}</strong>, and a senior consultant will be in contact with you '
+        'within one business day.</p>'
+        '<p style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.7;margin:0 0 14px">'
+        'In the meantime, if anything else comes to mind, simply reply to this email or call us on '
+        '+44 7378977371 (Monday to Friday, 08:30 - 18:30 GMT).</p>'
+        '<p style="font-family:Arial,sans-serif;font-size:14px;color:#222;line-height:1.7;margin:0">'
+        'Warm regards,<br/><strong>The Nivi Business Consulting Team</strong><br/>'
+        '<span style="color:#888;font-size:12px">Office 540G, 3 Fitzroy Place, Sauchiehall Street, Glasgow City Centre, Glasgow, UK</span></p>'
+        '<p style="font-family:Arial,sans-serif;font-size:11px;color:#aaa;margin:28px 0 0;border-top:1px solid #eee;padding-top:14px">'
+        'This is an automated confirmation from the Nivi Business Consulting Ltd website.</p>'
+        '</td></tr></table></td></tr></table>'
+    )
+    reply_id = await send_email(to=input.email, subject=reply_subject, html=reply_html)
+    if reply_id:
+        logger.info(f"Auto-reply sent to enquirer: {reply_id}")
+    else:
+        logger.error("Auto-reply to enquirer failed")
     return enquiry
 
 

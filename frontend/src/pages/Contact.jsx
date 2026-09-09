@@ -147,8 +147,9 @@ export default function Contact() {
                   <CheckCircle2 className="w-12 h-12 text-[#E2C08D] mx-auto" />
                   <h3 className="mt-6 font-serif text-2xl text-[#F9FAFB]">Thank you, {form.name.split(" ")[0]}.</h3>
                   <p className="mt-3 text-sm text-slate-400 max-w-sm mx-auto leading-relaxed">
-                    Your enquiry has been received. A senior consultant will be in
-                    touch at <span className="text-[#E2C08D]">{form.email}</span> within one business day.
+                    Your enquiry has been received and a confirmation email is on
+                    its way to <span className="text-[#E2C08D]">{form.email}</span>.
+                    A senior consultant will be in touch within one business day.
                   </p>
                 </div>
               ) : (

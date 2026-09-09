@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-09, update 19)
+- Visitor auto-reply ON: enquirers get an instant branded confirmation email ("We have received your enquiry — Nivi Business Consulting Ltd") at the address they enter; owner alert unchanged. Verified live (both sends returned IDs). Contact success panel now mentions the confirmation email
+
 ## Implemented (2026-09-02, update 18)
 - Phone (tel:+447378977371) and email (mailto:nivibusinessconsultant@gmail.com) now tappable in Contact Direct channels + footer; verified hrefs live
 
