@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-02, update 18)
+- Phone (tel:+447378977371) and email (mailto:nivibusinessconsultant@gmail.com) now tappable in Contact Direct channels + footer; verified hrefs live
+
 ## Implemented (2026-09-02, update 17)
 - Phone number changed to +44 7378977371 (Contact page + footer)
 

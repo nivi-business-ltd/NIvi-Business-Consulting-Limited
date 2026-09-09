@@ -89,14 +89,14 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Email</p>
-                    <p className="mt-1 text-sm text-slate-300">nivibusinessconsultant@gmail.com</p>
+                    <a href="mailto:nivibusinessconsultant@gmail.com" data-testid="contact-email-link" className="mt-1 block text-sm text-slate-300 hover:text-[#E2C08D] transition-colors duration-300 break-all">nivibusinessconsultant@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="w-5 h-5 text-[#E2C08D] mt-0.5" />
                   <div>
                     <p className="font-mono text-xs uppercase tracking-widest text-slate-500">Telephone</p>
-                    <p className="mt-1 text-sm text-slate-300">+44 7378977371</p>
+                    <a href="tel:+447378977371" data-testid="contact-phone-link" className="mt-1 block text-sm text-slate-300 hover:text-[#E2C08D] transition-colors duration-300">+44 7378977371</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
