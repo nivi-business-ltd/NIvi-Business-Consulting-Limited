@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion, useScroll, useTransform, useInView, animate } from "framer-motion";
+import { motion, useScroll, useTransform, animate } from "framer-motion";
 import { ArrowUpRight, Network, Blocks, BarChart3, Workflow } from "lucide-react";
 import Marquee from "@/components/Marquee";
 import { Reveal, MaskedLine } from "@/components/Reveal";
@@ -57,21 +57,19 @@ const stats = [
   { value: 40, suffix: "%", label: "Avg. process cost reduction" },
 ];
 
-const Counter = ({ value, suffix }) => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
+const Counter = ({ value, suffix, delay = 0 }) => {
   const [n, setN] = useState(0);
   useEffect(() => {
-    if (!inView) return;
     const controls = animate(0, value, {
       duration: 1.8,
+      delay: 1.6 + delay,
       ease: [0.215, 0.61, 0.355, 1],
       onUpdate: (v) => setN(Math.round(v)),
     });
     return () => controls.stop();
-  }, [inView, value]);
+  }, [value, delay]);
   return (
-    <span ref={ref} className="font-mono text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#E2C08D]">
+    <span className="font-mono text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-[#E2C08D]">
       {n}{suffix}
     </span>
   );

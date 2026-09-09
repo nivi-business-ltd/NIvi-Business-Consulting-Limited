@@ -20,6 +20,9 @@ Create a website for Nivi Finserv Ltd., a UK-based digital solutions and busines
 - DB: MongoDB `enquiries` collection (string UUID ids, ISO timestamps)
 - Design system: /app/design_guidelines.json — obsidian #0A0E17, champagne gold #E2C08D, Playfair Display / Plus Jakarta Sans / JetBrains Mono
 
+## Implemented (2026-09-09, update 20)
+- Hero stat counters fix: replaced scroll-into-view trigger (unreliable on phones, stats stuck at 0) with load-timed count-up tied to hero entrance. Verified all four values (120+, 14, 98%, 40%) at 390px viewport
+
 ## Implemented (2026-09-09, update 19)
 - Visitor auto-reply ON: enquirers get an instant branded confirmation email ("We have received your enquiry — Nivi Business Consulting Ltd") at the address they enter; owner alert unchanged. Verified live (both sends returned IDs). Contact success panel now mentions the confirmation email
 
