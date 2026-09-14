@@ -9,7 +9,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
-
+import Policies from "@/pages/Policies";
 const Router = process.env.REACT_APP_STATIC_MODE === "true" ? HashRouter : BrowserRouter;
 
 function ScrollToTop() {
@@ -56,6 +56,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+  <Route path="/policies" element={<Policies />} />
         </Routes>
         <Footer />
         <Toaster theme="dark" position="bottom-right" />
