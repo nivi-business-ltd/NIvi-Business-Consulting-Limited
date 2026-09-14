@@ -41,7 +41,7 @@ export default function Footer() {
         <div className="md:col-span-3">
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#E2C08D]/80 mb-5">Navigate</p>
           <div className="flex flex-col gap-3">
-            {[["Home", "/"], ["About", "/about"], ["Services", "/services"], ["Contact", "/contact"]].map(([label, to]) => (
+           {[["Home", "/"], ["About", "/about"], ["Services", "/services"], ["Contact", "/contact"], ["Policies", "/policies"]].map(([label, to]) => (
               <Link key={to} to={to} className="text-sm text-slate-400 hover:text-[#E2C08D] transition-colors duration-300 w-fit">
                 {label}
               </Link>
